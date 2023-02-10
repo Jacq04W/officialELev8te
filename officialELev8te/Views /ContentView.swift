@@ -11,16 +11,18 @@ struct ContentView: View {
     // array of images
    static var players = ["camper","archer","sniper","zombie","storm trooper","purp"]
     @State private var isAnimted = false
-    
+    @State private var tapToPlay = false
+
     
     var body: some View {
-        NavigationView{
+            if tapToPlay{
+                ChoosePlayer()
+            } else {
+                frontPage
+            }
             
-            frontPage
-         
             
-            
-        }
+        
     }
     
     
@@ -63,7 +65,10 @@ struct ContentView: View {
                 Spacer()
             }
             
-            NavigationLink(destination : ChoosePlayer()) {
+            Button() {
+                tapToPlay = true
+            } label:{
+                
             Text("Tap here to play") }
             .font(.title)
             .fontWeight(.black)

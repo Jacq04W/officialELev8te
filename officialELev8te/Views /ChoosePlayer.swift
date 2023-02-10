@@ -9,60 +9,33 @@ import SwiftUI
 
 struct ChoosePlayer: View {
     var players = ["camper","archer","sniper","zombie","storm trooper","purple dude"]
-    // bool fro animations
+    // bool for animations
     @State private var isAnimted = false
+    @State private var nextPage  = false
+
     var body: some View {
-        ZStack{
-            // makes the background color
-            Image("orange")
-            Image("bg2")
-            
-            topLogo
-            selectIcon
-            PlayerLayout()
-            
-            
-
-            
-            
-            
-            
-            VStack{
-                Spacer()
-                Spacer()
-//                Button(){
-//                    isAnimted.toggle()
-//
-//                }
-//
-//            label: {
-//                    // fix button
-//                    Text("Next")
-//                        .font(.title)
-//                        .fontWeight(.black)
-//                        .frame(width: isAnimted ? 200 : 250,
-//                           height: 60)
-//                        .animation(.easeInOut, value: isAnimted)
-//
-//                    .background(.yellow)
-//                    .foregroundColor(.black)
-//                    .cornerRadius(5)                }
+        
+        if nextPage{
+            PlayerSelected()
+        } else {
+            ZStack{
+                // makes the background color
+                Image("orange")
+                Image("bg2")
+                
+                topLogo
+                selectIcon
+                PlayerLayout()
                 
                 
                 
-                NavigationLink(destination : IconSelected()) {
-                Text("Next") }
-                .font(.title)
-                .fontWeight(.bold)
-                .frame(width: isAnimted ? 72 : 72,
-                   height: 36)
-            .background(.yellow)
-            .foregroundColor(.black)
-            .cornerRadius(9)
-                Spacer()
-
+                
+                
+                nextButton
+                
+             
+                
             }
-            
         }
     }
         
@@ -73,14 +46,31 @@ struct ChoosePlayer: View {
         
         
         
-        
-        
-        
-        
-        
-        
-        
         // custom variables
+    var nextButton: some View  {
+        VStack{
+            Spacer()
+            Spacer()
+
+            Button(){
+                nextPage = true }
+            label : {
+                Text("Next") }
+            .font(.title)
+            .fontWeight(.bold)
+            .frame(width: isAnimted ? 72 : 72,
+                   height: 36)
+            .background(.yellow)
+            .foregroundColor(.black)
+            .cornerRadius(9)
+            Spacer()
+            
+        }
+    }
+        
+        
+        
+        // new code 
         // put logo in top left corner
         var topLogo: some View{
             VStack {

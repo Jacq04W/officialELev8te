@@ -16,7 +16,7 @@
 		0969DAE02994730600F27AA8 /* ChoosePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0969DADF2994730600F27AA8 /* ChoosePlayer.swift */; };
 		0969DAE22994A80400F27AA8 /* GameController .swift in Sources */ = {isa = PBXBuildFile; fileRef = 0969DAE12994A80400F27AA8 /* GameController .swift */; };
 		0969DAE62994B0DB00F27AA8 /* PlayerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0969DAE52994B0DB00F27AA8 /* PlayerLayout.swift */; };
-		099FE22229958A410023C0B0 /* IconSelected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099FE22129958A410023C0B0 /* IconSelected.swift */; };
+		099FE22229958A410023C0B0 /* PlayerSelected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099FE22129958A410023C0B0 /* PlayerSelected.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		0969DADF2994730600F27AA8 /* ChoosePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePlayer.swift; sourceTree = "<group>"; };
 		0969DAE12994A80400F27AA8 /* GameController .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameController .swift"; sourceTree = "<group>"; };
 		0969DAE52994B0DB00F27AA8 /* PlayerLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerLayout.swift; sourceTree = "<group>"; };
-		099FE22129958A410023C0B0 /* IconSelected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconSelected.swift; sourceTree = "<group>"; };
+		099FE22129958A410023C0B0 /* PlayerSelected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSelected.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +48,6 @@
 		0969DAC529946A5800F27AA8 = {
 			isa = PBXGroup;
 			children = (
-				0969DAE12994A80400F27AA8 /* GameController .swift */,
 				0969DAD029946A5800F27AA8 /* officialELev8te */,
 				0969DACF29946A5800F27AA8 /* Products */,
 			);
@@ -87,6 +86,7 @@
 		099FE21B2994C9320023C0B0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0969DAE12994A80400F27AA8 /* GameController .swift */,
 				0969DAE52994B0DB00F27AA8 /* PlayerLayout.swift */,
 				0923EE6E29958C0100642731 /* SelectedPlayerLayout .swift */,
 			);
@@ -98,7 +98,7 @@
 			children = (
 				0969DAD329946A5800F27AA8 /* ContentView.swift */,
 				0969DADF2994730600F27AA8 /* ChoosePlayer.swift */,
-				099FE22129958A410023C0B0 /* IconSelected.swift */,
+				099FE22129958A410023C0B0 /* PlayerSelected.swift */,
 			);
 			path = "Views ";
 			sourceTree = "<group>";
@@ -175,7 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0969DAE02994730600F27AA8 /* ChoosePlayer.swift in Sources */,
-				099FE22229958A410023C0B0 /* IconSelected.swift in Sources */,
+				099FE22229958A410023C0B0 /* PlayerSelected.swift in Sources */,
 				0969DAD429946A5800F27AA8 /* ContentView.swift in Sources */,
 				0969DAE62994B0DB00F27AA8 /* PlayerLayout.swift in Sources */,
 				0923EE6F29958C0100642731 /* SelectedPlayerLayout .swift in Sources */,
