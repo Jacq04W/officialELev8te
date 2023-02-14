@@ -16,6 +16,7 @@
 		0969DAE02994730600F27AA8 /* ChoosePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0969DADF2994730600F27AA8 /* ChoosePlayer.swift */; };
 		0969DAE22994A80400F27AA8 /* GameController .swift in Sources */ = {isa = PBXBuildFile; fileRef = 0969DAE12994A80400F27AA8 /* GameController .swift */; };
 		0969DAE62994B0DB00F27AA8 /* PlayerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0969DAE52994B0DB00F27AA8 /* PlayerLayout.swift */; };
+		099D8BA2299AC8DB0008A619 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099D8BA1299AC8DB0008A619 /* StoryView.swift */; };
 		099FE22229958A410023C0B0 /* PlayerSelected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099FE22129958A410023C0B0 /* PlayerSelected.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		0969DADF2994730600F27AA8 /* ChoosePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePlayer.swift; sourceTree = "<group>"; };
 		0969DAE12994A80400F27AA8 /* GameController .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameController .swift"; sourceTree = "<group>"; };
 		0969DAE52994B0DB00F27AA8 /* PlayerLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerLayout.swift; sourceTree = "<group>"; };
+		099D8BA1299AC8DB0008A619 /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
 		099FE22129958A410023C0B0 /* PlayerSelected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSelected.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +88,7 @@
 			children = (
 				0969DAE12994A80400F27AA8 /* GameController .swift */,
 				0969DAE52994B0DB00F27AA8 /* PlayerLayout.swift */,
+				099D8BA1299AC8DB0008A619 /* StoryView.swift */,
 				0923EE6E29958C0100642731 /* SelectedPlayerLayout .swift */,
 			);
 			path = Models;
@@ -178,6 +181,7 @@
 				0969DAE62994B0DB00F27AA8 /* PlayerLayout.swift in Sources */,
 				0923EE6F29958C0100642731 /* SelectedPlayerLayout .swift in Sources */,
 				0969DAE22994A80400F27AA8 /* GameController .swift in Sources */,
+				099D8BA2299AC8DB0008A619 /* StoryView.swift in Sources */,
 				0969DAD229946A5800F27AA8 /* officialELev8teApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
