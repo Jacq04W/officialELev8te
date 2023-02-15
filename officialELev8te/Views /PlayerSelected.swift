@@ -9,38 +9,44 @@ import SwiftUI
 
 struct PlayerSelected: View {
    @State private var selectPlayers  = ["purp"]
+        // start off false and if true go to differnt page ↓
     @State private var goBack  = false
+    @State private var next  = false
+
 
     var body: some View {
         ZStack{
-            
-            if goBack {
+            // if go back = true show this ↓
+            if next{
+                StoryView()
+            }
+            else if
+                goBack {
                 ChoosePlayer()
+                
             } else {
-                // makes the background color
+                    // makes the background color ↓
                 ZStack{
                     Image("orange")
                     Image("bg2")
                     selectedIcon
-                    SelectedPlayerLayout(selectedPlayer: "sniper")
-                    
+                    SelectedPlayerLayout(selectedPlayer: "purp")
                     VStack {
-                        Spacer()
-                        Spacer()
-                        Spacer()
-                        
-                        Spacer()
+                        // spacers to push buttons to bottom of screen
+        ForEach (0..<4){ space in Spacer()
+            
+        }
                         HStack(spacing:60){
                             Spacer()
                             
                             Button("Back"){
                                 goBack = true
-                            }.frame(width: 72.0, height: 36.0) .background(.yellow).foregroundColor(.black).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            }.frame(width: 72.0, height: 36.0) .background(.yellow).foregroundColor(.black).fontWeight(.bold)
                                 .cornerRadius(9)
                             
                             
                             Button("Next"){
-                                
+                                next.toggle()
                             }.frame(width: 72.0, height: 36.0) .background(.black).foregroundColor(.yellow).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                                 .cornerRadius(9)
                             Spacer()

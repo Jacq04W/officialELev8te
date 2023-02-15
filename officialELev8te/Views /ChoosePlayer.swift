@@ -22,19 +22,10 @@ struct ChoosePlayer: View {
                 // makes the background color
                 Image("orange")
                 Image("bg2")
-                
                 topLogo
                 selectIcon
                 PlayerLayout()
-                
-                
-                
-                
-                
                 nextButton
-                
-             
-                
             }
         }
     }
@@ -53,10 +44,11 @@ struct ChoosePlayer: View {
             Spacer()
 
             Button(){
-                nextPage = true }
+                nextPage = true
+                StoryView()
+            }
             label : {
                 Text("Next") }
-            .font(.title)
             .fontWeight(.bold)
             .frame(width: isAnimted ? 72 : 72,
                    height: 36)
